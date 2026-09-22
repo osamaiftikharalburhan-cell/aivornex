@@ -4,22 +4,40 @@ import { motion } from "framer-motion";
 
 const ORBS = [
   {
-    className:
-      "left-[8%] top-[10%] h-72 w-72 bg-gradient-to-br from-blue-400 to-blue-600",
+    style: {
+      left: "8%",
+      top: "10%",
+      width: 288,
+      height: 288,
+      background:
+        "radial-gradient(circle, rgba(96,165,250,0.55) 0%, rgba(37,99,235,0.2) 45%, rgba(37,99,235,0) 70%)",
+    },
     duration: 9,
     delay: 0,
     range: 24,
   },
   {
-    className:
-      "right-[6%] top-[4%] h-96 w-96 bg-gradient-to-br from-purple-400 to-fuchsia-500",
+    style: {
+      right: "6%",
+      top: "4%",
+      width: 384,
+      height: 384,
+      background:
+        "radial-gradient(circle, rgba(216,180,254,0.55) 0%, rgba(217,70,239,0.2) 45%, rgba(217,70,239,0) 70%)",
+    },
     duration: 11,
     delay: 0.6,
     range: 30,
   },
   {
-    className:
-      "left-[32%] top-[46%] h-64 w-64 bg-gradient-to-br from-cyan-300 to-sky-500",
+    style: {
+      left: "32%",
+      top: "46%",
+      width: 256,
+      height: 256,
+      background:
+        "radial-gradient(circle, rgba(165,243,252,0.55) 0%, rgba(14,165,233,0.2) 45%, rgba(14,165,233,0) 70%)",
+    },
     duration: 8,
     delay: 1.2,
     range: 20,
@@ -32,7 +50,8 @@ export default function FloatingOrbs() {
       {ORBS.map((orb, i) => (
         <motion.div
           key={i}
-          className={`absolute rounded-full opacity-40 blur-2xl ${orb.className}`}
+          className="absolute rounded-full opacity-40"
+          style={orb.style}
           animate={{ y: [0, -orb.range, 0], x: [0, orb.range / 2, 0] }}
           transition={{
             duration: orb.duration,
