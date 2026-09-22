@@ -87,7 +87,7 @@ export default function AboutPage() {
               </a>
               <a
                 href={MAILTO_LINK}
-                className="rounded-full border border-zinc-200 bg-white px-6 py-3 text-sm font-semibold text-zinc-800 shadow-3d-sm transition-all duration-200 hover:-translate-y-[2px] hover:scale-[1.02] hover:shadow-lg active:scale-[0.98] active:translate-y-0"
+                className="break-all rounded-full border border-zinc-200 bg-white px-6 py-3 text-center text-sm font-semibold text-zinc-800 shadow-3d-sm transition-all duration-200 hover:-translate-y-[2px] hover:scale-[1.02] hover:shadow-lg active:scale-[0.98] active:translate-y-0"
               >
                 {CONTACT_EMAIL}
               </a>

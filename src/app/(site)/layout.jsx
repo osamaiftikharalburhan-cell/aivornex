@@ -20,10 +20,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} bg-base font-sans text-zinc-900 antialiased`}
+        className={`${inter.variable} overflow-x-hidden bg-base font-sans text-zinc-900 antialiased`}
       >
         <Navbar />
-        <main className="pt-28">{children}</main>
+        <main className="overflow-x-hidden pt-28">{children}</main>
         <Footer />
         <WhatsAppButton />
       </body>

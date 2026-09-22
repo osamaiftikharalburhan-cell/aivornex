@@ -46,7 +46,7 @@ export default function Footer() {
               </p>
               <ul className="mt-4 space-y-2 text-sm text-zinc-600">
                 <li>
-                  <a href={MAILTO_LINK} className="hover:text-zinc-900">
+                  <a href={MAILTO_LINK} className="break-all hover:text-zinc-900">
                     {CONTACT_EMAIL}
                   </a>
                 </li>
